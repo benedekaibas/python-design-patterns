@@ -52,7 +52,7 @@ def extract(case: str):
             if genre:
                 print(f"   Genre: {genre}")
     elif case == "xml":
-        path = dir_path / Path("person.xml")
+        path = dir_path / Path("people.xml")
         factory = extract_factory(path)
         data = factory.parsed_data
 
