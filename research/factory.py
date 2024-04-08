@@ -3,7 +3,7 @@
 import json
 import xml.etree.ElementTree as ET
 from pathlib import Path
-
+import time
 
 class JSONDataExtractor:
     def __init__(self, filepath: Path):
@@ -71,6 +71,10 @@ def extract(case: str):
 
 if __name__ == "__main__":
     print("* JSON case *")
+    start_time = time.perf_counter()
     extract(case="json")
+    end_time = time.perf_counter()
+    print(f"Time taken for json method is: {end_time - start_time}")
+
     print("* XML case *")
     extract(case="xml")
