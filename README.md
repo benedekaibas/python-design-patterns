@@ -1,2 +1,2 @@
-# python-design-patterns
+# Python Design Patterns
 Experiments and test cases for python🐍 design patterns.  
